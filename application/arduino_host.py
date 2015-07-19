@@ -27,7 +27,7 @@ if (__name__ == '__main__'):
     parser.add_argument("-s", help="step this many steps.", type=int, nargs='+')
     args = parser.parse_args()
     if (args.v or args.s):
-        arduino = ArduinoHost("COM5")
+        arduino = ArduinoHost("COM7")
 
     if (args.v):
         for v in args.v:
